@@ -14,10 +14,6 @@ const connectDB=async()=>{
         });
         
         console.log(`Connection success! DB Host ${connectionInstance.connection.host}`);
-        app.listen(process.env.PORT,()=>{
-         console.log(`App listening on port: ${process.env.PORT}`);
-
-        });
          
     } catch (error) {
         console.log("ERROR!!: ",error)
